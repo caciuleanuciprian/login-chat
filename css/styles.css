@@ -50,4 +50,10 @@ font-family: Arial, Helvetica, sans-serif;
       position: relative;
       text-align: center;
       padding: 4%;
+      transition: 0.4s;
+  }
+
+  .btn:hover{
+    background-color: turquoise;
+  color: black;
   }
