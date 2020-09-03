@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --roboto: 'Roboto', sans-serif;
+}
+
+body{
+    animation: fade 1s ease;
+    background-color: #28464B;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Testing purposes */
+
+h1{
+    color: #6BE4D4;
+    font-family: var(--roboto);
+}
