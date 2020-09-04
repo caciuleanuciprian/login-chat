@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+background-color: #28464B;
+  
+height: 100%; 
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Quicksand', sans-serif;
+  }
+.logo{
+  border: 2px solid transparent;
+  margin: 5%;
+  text-align: center;
+  padding: 0px;
+  object-fit: cover;
+  
+}
+  .container {
+    margin: auto;
+    color: turquoise;
+    margin-top: 150px;
+    width: 25%;
+    padding: 0px;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  b{
+    float: left;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 4%;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #326771;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: turquoise;
+    opacity: 0.5;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: .2; /* Firefox */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: turquoise;
+  }
+
+  input:focus{
+    transition: ease-in-out .4s;
+    opacity: 1;
+  }
+
+  .btn {
+      
+      background-color: #2C8C99;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+      opacity: .9;
+      position: relative;
+      text-align: center;
+      padding: 4%;
+      transition: 0.4s;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 18px;
+  }
+
+  .btn:hover{
+    background-color: turquoise;
+  color: black;
+  }
