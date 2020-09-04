@@ -12,6 +12,20 @@ background-repeat: no-repeat;
 background-size: cover;
 font-family: 'Quicksand', sans-serif;
   }
+
+body{
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .logo{
   border: 2px solid transparent;
   margin: 5%;
