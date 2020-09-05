@@ -1,4 +1,6 @@
-// Small accounts database
+
+// NEEDS TO BE REDONE
+
 
 const accounts = [
 
@@ -20,13 +22,15 @@ const accounts = [
 // Checking if the account exists   
 
 
+
 function checkInfo(){
     event.preventDefault()                                                              // prevents url changing
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     for(let i = 0; i < accounts.length; i++){                                           // looping through the array "accounts"
         if(username == accounts[i].username && password == accounts[i].password){
-            window.location.replace("loading.html");                                    // redirect to loading screen
+            
+            //window.location.replace("loading.html");                                    // redirect to loading screen
             return;
             
         }
