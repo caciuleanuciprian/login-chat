@@ -7,9 +7,9 @@ const messageForm = document.getElementById('send-container');
 const messageInput = document.getElementById('message-input');
 const messageContainer = document.getElementById('message-container');
 
+const name = prompt('name:')
 
-const name = document.getElementById('username');
-console.log(name);
+console.log(name.socket.id);
 appendMessage(`${name} has connected ecran principal`);
 socket.emit('new-user', name);
 
