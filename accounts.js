@@ -1,5 +1,4 @@
 
-// NEEDS TO BE REDONE
 
 
 const accounts = [
@@ -26,17 +25,14 @@ function checkInfo(){
     event.preventDefault()                                                              // prevents url changing
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    console.log(variabilaGlobala)
-    console.log(username)
     for(let i = 0; i < accounts.length; i++){                                           // looping through the array "accounts"
         if(username == accounts[i].username && password == accounts[i].password){
-            //window.location.replace("loading.html");                                    // redirect to loading screen
-            return username;
+            localStorage.setItem('1', username);
+            window.location.replace("loading.html");                                    // redirect to loading screen
+            return;
             
         }
     }  
         alert("Username or password is incorrect. Please try again.");                  // error message
 }
 
-
-export {checkInfo};

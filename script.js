@@ -1,5 +1,5 @@
 
-// NEEDS TO BE TWEAKED
+
 
 
 const socket = io('http://localhost:3000');
@@ -7,9 +7,8 @@ const messageForm = document.getElementById('send-container');
 const messageInput = document.getElementById('message-input');
 const messageContainer = document.getElementById('message-container');
 
-const name = prompt('name:')
+const name = localStorage.getItem('1');
 
-console.log(name.socket.id);
 appendMessage(`${name} has connected ecran principal`);
 socket.emit('new-user', name);
 
