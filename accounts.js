@@ -1,5 +1,4 @@
-
-
+// Small accounts database
 
 const accounts = [
 
@@ -20,14 +19,13 @@ const accounts = [
 
 // Checking if the account exists   
 
-    
+
 function checkInfo(){
     event.preventDefault()                                                              // prevents url changing
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     for(let i = 0; i < accounts.length; i++){                                           // looping through the array "accounts"
         if(username == accounts[i].username && password == accounts[i].password){
-            localStorage.setItem('1', username);
             window.location.replace("loading.html");                                    // redirect to loading screen
             return;
             
@@ -35,4 +33,3 @@ function checkInfo(){
     }  
         alert("Username or password is incorrect. Please try again.");                  // error message
 }
-

@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev" : "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,6 @@
   },
   "homepage": "https://github.com/caciuleanuciprian/login-chat#readme",
   "dependencies": {
-    "express": "^4.17.1",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {

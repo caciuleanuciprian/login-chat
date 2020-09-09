@@ -1,12 +1,4 @@
-const express = require('express')
-const app = express()
-const server = require('http').Server(app)
-const io = require('socket.io')(server);
-const PORT = process.env.PORT || 3000
-const index = '/index.html'
-app.use (express.static(__dirname + '/../../build'))
-
-
+const io = require('socket.io')(3000);
 
 const users = {};
 

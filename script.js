@@ -1,14 +1,10 @@
-
-
-
-
-const socket = io('/');
+const socket = io('http://localhost:3000');
 const messageForm = document.getElementById('send-container');
 const messageInput = document.getElementById('message-input');
 const messageContainer = document.getElementById('message-container');
 
-const name = localStorage.getItem('1');
 
+const name = prompt('What is your name?')
 appendMessage(`${name} has connected ecran principal`);
 socket.emit('new-user', name);
 
