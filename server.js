@@ -3,7 +3,7 @@ const fs = require('fs')
 const port = process.env.PORT || 8000;
 
 const server = http.createServer(function(req, res){
-    res.writeHead(200, { 'Content-Type': 'text/html'})
+    res.writeHead(200, { 'Content-Type': ''})
     fs.readFile('index.html', function(error, data){
       if(error){
         res.writeHead(404)
