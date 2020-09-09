@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --roboto: 'Quicksand', sans-serif;
+}
+
+body{
+    animation: fade 1s ease;
+    background-color: #28464B;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Testing purposes */
+
+h1{
+    color: #6BE4D4;
+    font-family: var(--roboto);
+}
