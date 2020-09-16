@@ -5,19 +5,20 @@ const messageContainer = document.getElementById('message-container');
 
 
 const name = prompt('What is your name?')
-appendMessage(`${name} has connected ecran principal`);
+appendMessage(`${name} has connected.`);
 socket.emit('new-user', name);
 
 socket.on('chat-message', data => {
     appendMessage(`${data.name}: ${data.message}`);
+    messageContainer.scrollTop = messageContainer.scrollHeight;
 })
 
 socket.on('user-connected', name => {
-    appendMessage(`${name} connected celalalt`);
+    appendMessage(`${name} has joined the chat.`);
 })
 
 socket.on('user-disconnected', name => {
-    appendMessage(`${name} disconnected celalalt`);
+    appendMessage(`${name} has disconnected.`);
 })
 
 messageForm.addEventListener('submit', e => {
