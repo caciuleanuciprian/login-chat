@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Login - Chat</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     
-    <h1>Welcome to the chat room</h1>
+    <form class="container">
+       <div class="logo"> 
+        <img src="./src/logo/logo.png" style="width:60%;height:100%;">
+           </div>
+        <label for="username"><b>Username</b></label>
+        <input type="text" name="username" placeholder="Enter username" id="username" autocomplete="off">
 
-    <div id="message-container"></div>
-    <form id="send-container">
-        <input type="text" id="message-input">
-        <button type="submit" id="send-button">Send</button>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" name="password" placeholder="Enter password" id="password" autocomplete="off">
+        <button id="submit" class="btn" onclick="checkInfo()">Log In</button>
     </form>
 
+    <script src="./script.js"></script>
+    <script src="./accounts.js"></script>
 
-    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
-    <script defer src="./script.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.22.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.22.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script>
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+  var config = {
+    apiKey: "<API_KEY>",
+    authDomain: "<PROJECT_ID>.firebaseapp.com",
+    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+    projectId: "<PROJECT_ID>",
+    storageBucket: "<BUCKET>.appspot.com",
+    messagingSenderId: "<SENDER_ID>",
+  };
+  firebase.initializeApp(config);
+</script>
+
 </body>
 </html>
