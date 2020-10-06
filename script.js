@@ -5,7 +5,7 @@ const messageContainer = document.getElementById('message-container');
 
 
 const name = localStorage.getItem(1);
-appendMessage(`${name} has connected ecran principal`);
+appendMessage(`${name} has connected`);
 socket.emit('new-user', name);
 
 socket.on('chat-message', data => {
@@ -13,11 +13,11 @@ socket.on('chat-message', data => {
 })
 
 socket.on('user-connected', name => {
-    appendMessage(`${name} connected celalalt`);
+    appendMessage(`${name} connected`);
 })
 
 socket.on('user-disconnected', name => {
-    appendMessage(`${name} disconnected celalalt`);
+    appendMessage(`${name} disconnected`);
 })
 
 messageForm.addEventListener('submit', e => {

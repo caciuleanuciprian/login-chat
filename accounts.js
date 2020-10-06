@@ -3,16 +3,20 @@
 const accounts = [
 
     {
-        username: "ciprian",
+        username: "Ciprian",
         password: "parola123"
     },
     {
-        username: "andrei",
+        username: "Andrei",
         password: "parola"
     },
     {
         username: "123",
         password: "123"
+    },
+    {
+        username: "Serban",
+        password: "parola321"
     }
 
 ];
