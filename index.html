@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Chat</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     
-    <form class="container">
-       <div class="logo"> 
-        <img src="./src/logo/logo.png" style="width:60%;height:100%;">
-           </div>
-        <label for="username"><b>Username</b></label>
-        <input type="text" name="username" placeholder="Enter username" id="username" autocomplete="off">
+    <h1>Welcome to the chat room</h1>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" name="password" placeholder="Enter password" id="password" autocomplete="off">
-        <button id="submit" class="btn" onclick="checkInfo()">Log In</button>
+    <div id="message-container"></div>
+    <form id="send-container">
+        <input type="text" id="message-input">
+        <button type="submit" id="send-button">Send</button>
     </form>
 
-    <script src="./script.js"></script>
-    <script src="./accounts.js"></script>
 
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./script.js"></script>
 </body>
 </html>
