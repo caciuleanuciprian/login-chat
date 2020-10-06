@@ -4,7 +4,7 @@ const messageInput = document.getElementById('message-input');
 const messageContainer = document.getElementById('message-container');
 
 
-const name = prompt('What is your name?')
+const name = localStorage.getItem(1);
 appendMessage(`${name} has connected ecran principal`);
 socket.emit('new-user', name);
 
